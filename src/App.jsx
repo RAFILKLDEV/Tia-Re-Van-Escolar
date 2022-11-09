@@ -1,34 +1,27 @@
-import { Button } from "@mui/material";
-import { Box } from "@mui/system";
 import "./App.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./pages/Home.jsx";
+import Route from "./pages/Route.jsx";
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home />,
+    },
+    {
+      path: "/route",
+      element: <Route />,
+    },
+    {
+      path: "/contact",
+      element: <Route />,
+    },
+  ]);
+
   return (
     <div className="App">
-      <Box
-        sx={{
-          p: 2,
-          width: 800,
-          height: 25,
-          backgroundColor: "#FFE45C",
-          display: "flex",
-          gap: 5,
-          justifyContent: "center",
-          alignItems: "center",
-          margin: 15,
-        }}
-      >
-        <Button
-          sx={{
-            height: 30,
-          }}
-        >
-          Inicio
-        </Button>
-        <Button>Rotas</Button>
-        <Button>Fale Comigo!</Button>
-      </Box>
-      <div className="App-Content">Content Atualizado</div>
+      <RouterProvider router={router}></RouterProvider>
     </div>
   );
 }
