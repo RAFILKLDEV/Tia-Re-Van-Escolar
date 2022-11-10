@@ -2,7 +2,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #F2E8CF;
+  background-color: #f2e8cf;
   min-height: 100vh;
 }
 
+#Loading {
+  animation-name: loading;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  padding-bottom: 500px;
+}
+
+@keyframes loading {
+  from {
+    height: 200px;
+  }
+
+  to {
+    height: 203px;
+  }
+}

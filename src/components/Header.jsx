@@ -2,28 +2,37 @@ import { Button } from "@mui/material";
 import { Box } from "@mui/system";
 import { Link } from "react-router-dom";
 
-function Header() {
+const Header = () => {
   return (
-    <div className="Header">
+    <Box
+      sx={{
+        width: "100%",
+        scrollSnapType: "y mandatory",
+        overflowY: "auto",
+        height: "100%",
+      }}
+    >
       <Box
         sx={{
           p: 2,
-          width: 800,
+          width: "100%",
           height: 25,
-          backgroundColor: "#FFE45C",
+          backgroundColor: "#FDC500",
           display: "flex",
-          gap: 5,
+          gap: 10,
           justifyContent: "center",
           alignItems: "center",
-          margin: 15,
+          padding: "20px 0px",
+          boxShadow: "0px -10px 0px 0px rgba(51,101,160,1) inset",
         }}
       >
         <Link to={"/"}>
           <Button
             sx={{
               height: 30,
-              color: "text.primary",
+              color: "#00296B",
               fontWeight: 600,
+              fontSize: 20,
             }}
           >
             Inicio
@@ -34,8 +43,9 @@ function Header() {
           <Button
             sx={{
               height: 30,
-              color: "text.primary",
+              color: "#00296B",
               fontWeight: 600,
+              fontSize: 20,
             }}
           >
             Rotas
@@ -46,15 +56,16 @@ function Header() {
           <Button
             sx={{
               height: 30,
-              color: "text.primary",
+              color: "#00296B",
               fontWeight: 600,
+              fontSize: 20,
             }}
           >
             Fale Comigo!
           </Button>
         </Link>
       </Box>
-    </div>
+    </Box>
   );
 }
 
