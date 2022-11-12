@@ -1,69 +1,75 @@
 import { Button } from "@mui/material";
 import { Box } from "@mui/system";
-import { Link } from "react-router-dom";
 
 const Header = () => {
+  const my_element = document.getElementById("re");
+  const my_element2 = document.getElementById("re2");
+
   return (
     <Box
       sx={{
         width: "100%",
-        scrollSnapType: "y mandatory",
-        overflowY: "auto",
-        height: "100%",
       }}
     >
       <Box
         sx={{
           p: 2,
           width: "100%",
-          height: 35,
-          backgroundColor: "#FDC500",
+          height: "5vh",
+          backgroundColor: "#ffca00",
           display: "flex",
           gap: 10,
           justifyContent: "center",
           alignItems: "center",
           padding: "20px 0px",
-          boxShadow: "0px -10px 0px 0px rgba(51,101,160,1) inset",
+          boxShadow: "0px -10px 0px 0px #1f1f1f inset",
         }}
       >
-        <Link to={"/"}>
-          <Button
-            sx={{
-              height: 30,
-              color: "#00296B",
-              fontWeight: 600,
-              fontSize: 20,
-            }}
-          >
-            Inicio
-          </Button>
-        </Link>
+        <Button
+          sx={{
+            height: 30,
+            color: "black",
+            fontWeight: 600,
+            fontSize: 20,
+          }}
+          onClick={() =>
+            my_element.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+              inline: "nearest",
+            })
+          }
+        >
+          Inicio
+        </Button>
 
-        <Link to={"/route"}>
-          <Button
-            sx={{
-              height: 30,
-              color: "#00296B",
-              fontWeight: 600,
-              fontSize: 20,
-            }}
-          >
-            Rotas
-          </Button>
-        </Link>
-
-        <Link to={"/contact"}>
-          <Button
-            sx={{
-              height: 30,
-              color: "#00296B",
-              fontWeight: 600,
-              fontSize: 20,
-            }}
-          >
-            Fale Comigo!
-          </Button>
-        </Link>
+        <Button
+          sx={{
+            height: 30,
+            color: "black",
+            fontWeight: 600,
+            fontSize: 20,
+          }}
+          onClick={() =>
+            my_element2.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+              inline: "nearest",
+            })
+          }
+        >
+          Escolas
+        </Button>
+        <Button
+          sx={{
+            height: 30,
+            color: "black",
+            fontWeight: 600,
+            fontSize: 20,
+          }}
+        >
+          Contato!
+        </Button>
         <img
           src="https://cdn.discordapp.com/attachments/931731406118342676/1040269082831896646/Van.png"
           alt="Van Escolar"

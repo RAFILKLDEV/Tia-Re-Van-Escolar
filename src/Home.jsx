@@ -1,10 +1,10 @@
 import { Box } from "@mui/material";
 import React from "react";
-import Header from "../components/Header";
+import Header from "./components/Header";
 
 const Home = () => {
   return (
-    <>
+    <div className="Home">
       <Header />
       <Box
         sx={{
@@ -188,7 +188,7 @@ const Home = () => {
           </div>
         </Box>
       </Box>
-    </>
+    </div>
   );
 };
 

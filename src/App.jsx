@@ -1,27 +1,10 @@
 import "./App.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./pages/Home.jsx";
-import Route from "./pages/Route.tsx";
+import Home from "./Home2.jsx";
 
 function App() {
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Home />,
-    },
-    {
-      path: "/route",
-      element: <Route />,
-    },
-    {
-      path: "/contact",
-      element: <Route />,
-    },
-  ]);
-
   return (
     <div className="App">
-      <RouterProvider router={router}></RouterProvider>
+      <Home />
     </div>
   );
 }
