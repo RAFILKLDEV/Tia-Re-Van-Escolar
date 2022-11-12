@@ -18,97 +18,135 @@ const Home = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            background: "radial-gradient(#FFE45C, #9198e500);",
+            background: "radial-gradient(#ffe45cb7, #9198e500);",
             width: "100%",
             height: "100vh",
             boxShadow: "0px 10px 0px 0px rgba(51,101,160,1)",
+            gap: 5,
           }}
         >
-          <img
-            src="https://cdn.discordapp.com/attachments/931731406118342676/1040270405052674099/7020f1f7-9f83-44f2-8305-705d04cf4949.jpg"
-            alt="Tia Re"
-            width={200}
-          ></img>
-          <div>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "start",
-                textAlign: "center",
+          <div id="Home-img">
+            <img
+              src="https://cdn.discordapp.com/attachments/931731406118342676/1040655523151888394/oie_transparent_16.png"
+              alt="Tia Re"
+              width={300}
+              height={300}
+              style={{
+                paddingBottom: 50,
+              }}
+            ></img>
+          </div>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "start",
+              textAlign: "center",
+            }}
+          >
+            <h1
+              style={{
+                color: "#00296B",
+                fontSize: 50,
               }}
             >
-              <h1
+              Tia Re
+            </h1>
+            <Box
+              sx={{
+                width: 500,
+                color: "#00296B",
+              }}
+            >
+              <p
                 style={{
                   color: "#00296B",
+                  fontWeight: 600,
+                  fontSize: 35,
                 }}
               >
-                Tia Re
-              </h1>
-              <Box
-                sx={{
-                  width: 500,
+                Sou a Tia Rejane, trabalho com van escolar há mais de 15 anos.
+                João Rodrigues Guião, Cid de Oliveira, Amelia Junqueira, Barão
+                de Maua, Iavec, Vila Lobos
+              </p>
+              <p
+                style={{
                   color: "#00296B",
+                  fontWeight: 600,
                 }}
-              >
-                <p
-                  style={{
-                    color: "#00296B",
-                    fontWeight: 600,
-                  }}
-                >
-                  Sou a Tia Rejane, trabalho com van escolar há mais de 15 anos.
-                </p>
-                <p
-                  style={{
-                    color: "#00296B",
-                    fontWeight: 600,
-                  }}
-                >
-                  Sou a Tia Rejane, trabalho com van escolar há mais de 15 anos.
-                </p>
-              </Box>
+              ></p>
             </Box>
-          </div>
+          </Box>
         </Box>
         <Box
           sx={{
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            background: "radial-gradient(#FFE45C, #9198e500);",
+            background: "radial-gradient(#ffe45cb7, #9198e500);",
             width: "100%",
             height: "100vh",
             boxShadow: "0px 10px 0px 0px rgba(51,101,160,1)",
+            gap: 5,
           }}
         >
-          <div>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "start",
-                textAlign: "center",
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "start",
+              textAlign: "center",
+            }}
+          >
+            <h1
+              style={{
+                color: "#00296B",
+                fontSize: 50,
               }}
             >
-              <h1>Tia Re</h1>
-              <Box
-                sx={{
-                  width: 500,
+              Tia Re
+            </h1>
+            <Box
+              sx={{
+                width: 500,
+                color: "#00296B",
+              }}
+            >
+              <p
+                style={{
+                  color: "#00296B",
+                  fontWeight: 600,
+                  fontSize: 35,
                 }}
               >
-                <p>
-                  Sou a Tia Rejane, trabalho com van escolar há mais de 15 anos.
-                </p>
-                <p>Faço escolas como Cid, Guião, Amelinha</p>
-              </Box>
+                Trabalho com as escolas:
+                <div>* João Rodrigues Guião</div>
+                <div>* Cid de Oliveira</div>
+                <div>* Amelia Junqueira</div>
+                <div>* Barão de Maua</div>
+                <div>* Iavec</div>
+                <div>* Vila Lobos</div>
+                <div>* Entre outras disponiveis na região</div>
+              </p>
+              <p
+                style={{
+                  color: "#00296B",
+                  fontWeight: 600,
+                }}
+              ></p>
             </Box>
+          </Box>
+          <div id="Home-img">
+            <img
+              src="https://cdn.discordapp.com/attachments/931731406118342676/1040686597198331974/image.png"
+              alt="Tia Re"
+              width={300}
+              height={300}
+              style={{
+                paddingBottom: 50,
+              }}
+            ></img>
           </div>
-          <img
-            src="https://cdn.discordapp.com/attachments/931731406118342676/1040270404834558014/3b078209-1425-4eee-9b73-9d1e063313f3.jpg"
-            alt="Tia Re"
-            width={200}
-          ></img>
         </Box>
         <Box
           sx={{

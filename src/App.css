@@ -6,6 +6,18 @@
   min-height: 100vh;
 }
 
+#Home-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  width: 450px;
+  border-radius: 50%;
+  box-shadow: 0 0 100px 5px inset #00000057;
+}
+
+
 #Loading {
   animation-name: loading;
   animation-duration: 0.5s;

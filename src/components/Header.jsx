@@ -16,7 +16,7 @@ const Header = () => {
         sx={{
           p: 2,
           width: "100%",
-          height: 25,
+          height: 35,
           backgroundColor: "#FDC500",
           display: "flex",
           gap: 10,
@@ -64,9 +64,18 @@ const Header = () => {
             Fale Comigo!
           </Button>
         </Link>
+        <img
+          src="https://cdn.discordapp.com/attachments/931731406118342676/1040269082831896646/Van.png"
+          alt="Van Escolar"
+          width={100}
+          style={{
+            paddingBottom: 10,
+            paddingLeft: 15,
+          }}
+        ></img>
       </Box>
     </Box>
   );
-}
+};
 
 export default Header;
