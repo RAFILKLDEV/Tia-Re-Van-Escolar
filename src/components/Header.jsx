@@ -67,6 +67,11 @@ const Header = () => {
             fontWeight: 600,
             fontSize: 20,
           }}
+          onClick={() => {
+            window.open(
+              "https://api.whatsapp.com/send/?phone=5516992112265&text=Ola,+Tia+Rejane&type=phone_number&app_absent=0"
+            );
+          }}
         >
           Contato!
         </Button>
